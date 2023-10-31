@@ -21,5 +21,12 @@ namespace LoginRegistrationForm
         {
 
         }
+
+        private void Lbl_FrmSignUp_Login_Click(object sender, EventArgs e)
+        {
+            Frm_Principal pForm = new Frm_Principal();
+            pForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -40,8 +40,8 @@
             this.Lbl_DontHave = new System.Windows.Forms.Label();
             this.Lbl_Register = new System.Windows.Forms.Label();
             this.Lbl_Titulo = new System.Windows.Forms.Label();
+            this.Lbl_Close = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Lbl_Fechar = new System.Windows.Forms.Label();
             this.Pn_White.SuspendLayout();
             this.Pn_Blue.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,7 +50,7 @@
             // Pn_White
             // 
             this.Pn_White.BackColor = System.Drawing.Color.White;
-            this.Pn_White.Controls.Add(this.Lbl_Fechar);
+            this.Pn_White.Controls.Add(this.Lbl_Close);
             this.Pn_White.Controls.Add(this.Lbl_Register);
             this.Pn_White.Controls.Add(this.Lbl_DontHave);
             this.Pn_White.Controls.Add(this.CkBox_ShowPassword);
@@ -170,6 +170,7 @@
             this.Lbl_Register.Size = new System.Drawing.Size(96, 15);
             this.Lbl_Register.TabIndex = 9;
             this.Lbl_Register.Text = "Register Here";
+            this.Lbl_Register.Click += new System.EventHandler(this.Lbl_Register_Click);
             // 
             // Lbl_Titulo
             // 
@@ -183,6 +184,17 @@
             this.Lbl_Titulo.Text = "Lawyer Company";
             this.Lbl_Titulo.Click += new System.EventHandler(this.Lbl_MeuNome_Click);
             // 
+            // Lbl_Close
+            // 
+            this.Lbl_Close.AutoSize = true;
+            this.Lbl_Close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Lbl_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Close.Location = new System.Drawing.Point(604, 9);
+            this.Lbl_Close.Name = "Lbl_Close";
+            this.Lbl_Close.Size = new System.Drawing.Size(18, 18);
+            this.Lbl_Close.TabIndex = 10;
+            this.Lbl_Close.Text = "X";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LoginRegistrationForm.Properties.Resources.icons8_user_male_circle_104px_2;
@@ -191,17 +203,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(105, 103);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // Lbl_Fechar
-            // 
-            this.Lbl_Fechar.AutoSize = true;
-            this.Lbl_Fechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Lbl_Fechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Fechar.Location = new System.Drawing.Point(604, 9);
-            this.Lbl_Fechar.Name = "Lbl_Fechar";
-            this.Lbl_Fechar.Size = new System.Drawing.Size(18, 18);
-            this.Lbl_Fechar.TabIndex = 10;
-            this.Lbl_Fechar.Text = "X";
             // 
             // Frm_Principal
             // 
@@ -236,7 +237,7 @@
         private System.Windows.Forms.Label Lbl_Register;
         private System.Windows.Forms.Label Lbl_Titulo;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label Lbl_Fechar;
+        private System.Windows.Forms.Label Lbl_Close;
     }
 }
 

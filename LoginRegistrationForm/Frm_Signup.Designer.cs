@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Lbl_Fechar = new System.Windows.Forms.Label();
-            this.Lbl_Login = new System.Windows.Forms.Label();
+            this.Lbl_Close = new System.Windows.Forms.Label();
+            this.Lbl_FrmSignUp_Login = new System.Windows.Forms.Label();
             this.Lbl_DontHave = new System.Windows.Forms.Label();
             this.CkBox_ShowPassword = new System.Windows.Forms.CheckBox();
             this.Btn_SignUp = new System.Windows.Forms.Button();
@@ -47,28 +47,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Lbl_Fechar
+            // Lbl_Close
             // 
-            this.Lbl_Fechar.AutoSize = true;
-            this.Lbl_Fechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Lbl_Fechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Fechar.Location = new System.Drawing.Point(605, 9);
-            this.Lbl_Fechar.Name = "Lbl_Fechar";
-            this.Lbl_Fechar.Size = new System.Drawing.Size(18, 18);
-            this.Lbl_Fechar.TabIndex = 21;
-            this.Lbl_Fechar.Text = "X";
+            this.Lbl_Close.AutoSize = true;
+            this.Lbl_Close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Lbl_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Close.Location = new System.Drawing.Point(605, 9);
+            this.Lbl_Close.Name = "Lbl_Close";
+            this.Lbl_Close.Size = new System.Drawing.Size(18, 18);
+            this.Lbl_Close.TabIndex = 21;
+            this.Lbl_Close.Text = "X";
             // 
-            // Lbl_Login
+            // Lbl_FrmSignUp_Login
             // 
-            this.Lbl_Login.AutoSize = true;
-            this.Lbl_Login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Lbl_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Login.ForeColor = System.Drawing.Color.Gray;
-            this.Lbl_Login.Location = new System.Drawing.Point(484, 366);
-            this.Lbl_Login.Name = "Lbl_Login";
-            this.Lbl_Login.Size = new System.Drawing.Size(78, 15);
-            this.Lbl_Login.TabIndex = 20;
-            this.Lbl_Login.Text = "Login Here";
+            this.Lbl_FrmSignUp_Login.AutoSize = true;
+            this.Lbl_FrmSignUp_Login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Lbl_FrmSignUp_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_FrmSignUp_Login.ForeColor = System.Drawing.Color.Gray;
+            this.Lbl_FrmSignUp_Login.Location = new System.Drawing.Point(484, 366);
+            this.Lbl_FrmSignUp_Login.Name = "Lbl_FrmSignUp_Login";
+            this.Lbl_FrmSignUp_Login.Size = new System.Drawing.Size(78, 15);
+            this.Lbl_FrmSignUp_Login.TabIndex = 20;
+            this.Lbl_FrmSignUp_Login.Text = "Login Here";
+            this.Lbl_FrmSignUp_Login.Click += new System.EventHandler(this.Lbl_FrmSignUp_Login_Click);
             // 
             // Lbl_DontHave
             // 
@@ -111,7 +112,6 @@
             this.TxtBox_SignUp_Username.Location = new System.Drawing.Point(299, 160);
             this.TxtBox_SignUp_Username.Multiline = true;
             this.TxtBox_SignUp_Username.Name = "TxtBox_SignUp_Username";
-            this.TxtBox_SignUp_Username.PasswordChar = '*';
             this.TxtBox_SignUp_Username.Size = new System.Drawing.Size(263, 24);
             this.TxtBox_SignUp_Username.TabIndex = 16;
             // 
@@ -150,9 +150,9 @@
             this.Lbl_TxtGetStarted.Font = new System.Drawing.Font("MS PGothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_TxtGetStarted.Location = new System.Drawing.Point(295, 44);
             this.Lbl_TxtGetStarted.Name = "Lbl_TxtGetStarted";
-            this.Lbl_TxtGetStarted.Size = new System.Drawing.Size(116, 19);
+            this.Lbl_TxtGetStarted.Size = new System.Drawing.Size(121, 19);
             this.Lbl_TxtGetStarted.TabIndex = 12;
-            this.Lbl_TxtGetStarted.Text = "Get Started";
+            this.Lbl_TxtGetStarted.Text = "Get Started!";
             // 
             // Pn_Blue
             // 
@@ -161,7 +161,7 @@
             this.Pn_Blue.Controls.Add(this.Lbl_Titulo);
             this.Pn_Blue.Location = new System.Drawing.Point(0, 0);
             this.Pn_Blue.Name = "Pn_Blue";
-            this.Pn_Blue.Size = new System.Drawing.Size(279, 412);
+            this.Pn_Blue.Size = new System.Drawing.Size(275, 412);
             this.Pn_Blue.TabIndex = 11;
             // 
             // pictureBox1
@@ -207,11 +207,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(635, 412);
             this.Controls.Add(this.TxtBox_FrmSignUp_Password);
             this.Controls.Add(this.Lbl_Password);
-            this.Controls.Add(this.Lbl_Fechar);
-            this.Controls.Add(this.Lbl_Login);
+            this.Controls.Add(this.Lbl_Close);
+            this.Controls.Add(this.Lbl_FrmSignUp_Login);
             this.Controls.Add(this.Lbl_DontHave);
             this.Controls.Add(this.CkBox_ShowPassword);
             this.Controls.Add(this.Btn_SignUp);
@@ -234,8 +235,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Lbl_Fechar;
-        private System.Windows.Forms.Label Lbl_Login;
+        private System.Windows.Forms.Label Lbl_Close;
+        private System.Windows.Forms.Label Lbl_FrmSignUp_Login;
         private System.Windows.Forms.Label Lbl_DontHave;
         private System.Windows.Forms.CheckBox CkBox_ShowPassword;
         private System.Windows.Forms.Button Btn_SignUp;
