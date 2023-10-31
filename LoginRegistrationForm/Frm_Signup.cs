@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LoginRegistrationForm
 {
-    public partial class Frm_Principal : Form
+    public partial class Frm_Signup : Form
     {
-        public Frm_Principal()
+        public Frm_Signup()
         {
             InitializeComponent();
+        }
+
+        private void Lbl_TxtUseraname_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
