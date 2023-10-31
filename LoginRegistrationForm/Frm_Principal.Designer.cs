@@ -98,6 +98,7 @@
             // 
             // TxtBox_Username
             // 
+            this.TxtBox_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBox_Username.Location = new System.Drawing.Point(293, 136);
             this.TxtBox_Username.Multiline = true;
             this.TxtBox_Username.Name = "TxtBox_Username";
@@ -106,6 +107,7 @@
             // 
             // TxtBox_Password
             // 
+            this.TxtBox_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBox_Password.Location = new System.Drawing.Point(293, 197);
             this.TxtBox_Password.Multiline = true;
             this.TxtBox_Password.Name = "TxtBox_Password";
@@ -194,6 +196,7 @@
             this.Lbl_Close.Size = new System.Drawing.Size(18, 18);
             this.Lbl_Close.TabIndex = 10;
             this.Lbl_Close.Text = "X";
+            this.Lbl_Close.Click += new System.EventHandler(this.Lbl_Close_Click);
             // 
             // pictureBox1
             // 

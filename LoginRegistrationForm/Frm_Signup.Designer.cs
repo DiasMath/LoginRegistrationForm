@@ -57,6 +57,7 @@
             this.Lbl_Close.Size = new System.Drawing.Size(18, 18);
             this.Lbl_Close.TabIndex = 21;
             this.Lbl_Close.Text = "X";
+            this.Lbl_Close.Click += new System.EventHandler(this.Lbl_Close_Click);
             // 
             // Lbl_FrmSignUp_Login
             // 
@@ -109,6 +110,7 @@
             // 
             // TxtBox_SignUp_Username
             // 
+            this.TxtBox_SignUp_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBox_SignUp_Username.Location = new System.Drawing.Point(299, 160);
             this.TxtBox_SignUp_Username.Multiline = true;
             this.TxtBox_SignUp_Username.Name = "TxtBox_SignUp_Username";
@@ -128,6 +130,7 @@
             // 
             // TxtBoxFrmSignUp_Username
             // 
+            this.TxtBoxFrmSignUp_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBoxFrmSignUp_Username.Location = new System.Drawing.Point(299, 101);
             this.TxtBoxFrmSignUp_Username.Multiline = true;
             this.TxtBoxFrmSignUp_Username.Name = "TxtBoxFrmSignUp_Username";
@@ -186,6 +189,7 @@
             // 
             // TxtBox_FrmSignUp_Password
             // 
+            this.TxtBox_FrmSignUp_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBox_FrmSignUp_Password.Location = new System.Drawing.Point(299, 216);
             this.TxtBox_FrmSignUp_Password.Multiline = true;
             this.TxtBox_FrmSignUp_Password.Name = "TxtBox_FrmSignUp_Password";

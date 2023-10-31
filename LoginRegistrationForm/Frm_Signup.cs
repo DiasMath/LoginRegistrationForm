@@ -28,5 +28,10 @@ namespace LoginRegistrationForm
             pForm.Show();
             this.Hide();
         }
+
+        private void Lbl_Close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
