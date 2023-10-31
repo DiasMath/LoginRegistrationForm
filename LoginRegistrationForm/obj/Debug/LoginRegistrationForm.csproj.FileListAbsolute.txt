@@ -1,0 +1,10 @@
+C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\bin\Debug\LoginRegistrationForm.exe.config
+C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\bin\Debug\LoginRegistrationForm.exe
+C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\bin\Debug\LoginRegistrationForm.pdb
+C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\LoginRegistrationForm.csproj.AssemblyReference.cache
+C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\LoginRegistrationForm.Frm_Principal.resources
+C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\LoginRegistrationForm.Properties.Resources.resources
+C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\LoginRegistrationForm.csproj.GenerateResource.cache
+C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\LoginRegistrationForm.csproj.CoreCompileInputs.cache
+C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\LoginRegistrationForm.exe
+C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\LoginRegistrationForm.pdb
