@@ -33,10 +33,10 @@
             this.Lbl_TxtWelcome = new System.Windows.Forms.Label();
             this.Lbl_TxtUsername = new System.Windows.Forms.Label();
             this.TxtBox_Username = new System.Windows.Forms.TextBox();
-            this.TxtBox_Password = new System.Windows.Forms.TextBox();
+            this.TxtBox_FrmPrincipal_Password = new System.Windows.Forms.TextBox();
             this.Lbl_TxtPassword = new System.Windows.Forms.Label();
             this.Btn_Login = new System.Windows.Forms.Button();
-            this.CkBox_ShowPassword = new System.Windows.Forms.CheckBox();
+            this.CkBox_FrmPrincipal_ShowPassword = new System.Windows.Forms.CheckBox();
             this.Lbl_DontHave = new System.Windows.Forms.Label();
             this.Lbl_Register = new System.Windows.Forms.Label();
             this.Lbl_Titulo = new System.Windows.Forms.Label();
@@ -53,9 +53,9 @@
             this.Pn_White.Controls.Add(this.Lbl_Close);
             this.Pn_White.Controls.Add(this.Lbl_Register);
             this.Pn_White.Controls.Add(this.Lbl_DontHave);
-            this.Pn_White.Controls.Add(this.CkBox_ShowPassword);
+            this.Pn_White.Controls.Add(this.CkBox_FrmPrincipal_ShowPassword);
             this.Pn_White.Controls.Add(this.Btn_Login);
-            this.Pn_White.Controls.Add(this.TxtBox_Password);
+            this.Pn_White.Controls.Add(this.TxtBox_FrmPrincipal_Password);
             this.Pn_White.Controls.Add(this.Lbl_TxtPassword);
             this.Pn_White.Controls.Add(this.TxtBox_Username);
             this.Pn_White.Controls.Add(this.Lbl_TxtUsername);
@@ -105,15 +105,15 @@
             this.TxtBox_Username.Size = new System.Drawing.Size(263, 24);
             this.TxtBox_Username.TabIndex = 3;
             // 
-            // TxtBox_Password
+            // TxtBox_FrmPrincipal_Password
             // 
-            this.TxtBox_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_Password.Location = new System.Drawing.Point(293, 197);
-            this.TxtBox_Password.Multiline = true;
-            this.TxtBox_Password.Name = "TxtBox_Password";
-            this.TxtBox_Password.PasswordChar = '*';
-            this.TxtBox_Password.Size = new System.Drawing.Size(263, 24);
-            this.TxtBox_Password.TabIndex = 5;
+            this.TxtBox_FrmPrincipal_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBox_FrmPrincipal_Password.Location = new System.Drawing.Point(293, 197);
+            this.TxtBox_FrmPrincipal_Password.Multiline = true;
+            this.TxtBox_FrmPrincipal_Password.Name = "TxtBox_FrmPrincipal_Password";
+            this.TxtBox_FrmPrincipal_Password.PasswordChar = '*';
+            this.TxtBox_FrmPrincipal_Password.Size = new System.Drawing.Size(263, 24);
+            this.TxtBox_FrmPrincipal_Password.TabIndex = 5;
             // 
             // Lbl_TxtPassword
             // 
@@ -139,16 +139,17 @@
             this.Btn_Login.Text = "Login";
             this.Btn_Login.UseVisualStyleBackColor = false;
             // 
-            // CkBox_ShowPassword
+            // CkBox_FrmPrincipal_ShowPassword
             // 
-            this.CkBox_ShowPassword.AutoSize = true;
-            this.CkBox_ShowPassword.ForeColor = System.Drawing.Color.Gray;
-            this.CkBox_ShowPassword.Location = new System.Drawing.Point(454, 227);
-            this.CkBox_ShowPassword.Name = "CkBox_ShowPassword";
-            this.CkBox_ShowPassword.Size = new System.Drawing.Size(102, 17);
-            this.CkBox_ShowPassword.TabIndex = 7;
-            this.CkBox_ShowPassword.Text = "Show Password";
-            this.CkBox_ShowPassword.UseVisualStyleBackColor = true;
+            this.CkBox_FrmPrincipal_ShowPassword.AutoSize = true;
+            this.CkBox_FrmPrincipal_ShowPassword.ForeColor = System.Drawing.Color.Gray;
+            this.CkBox_FrmPrincipal_ShowPassword.Location = new System.Drawing.Point(454, 227);
+            this.CkBox_FrmPrincipal_ShowPassword.Name = "CkBox_FrmPrincipal_ShowPassword";
+            this.CkBox_FrmPrincipal_ShowPassword.Size = new System.Drawing.Size(102, 17);
+            this.CkBox_FrmPrincipal_ShowPassword.TabIndex = 7;
+            this.CkBox_FrmPrincipal_ShowPassword.Text = "Show Password";
+            this.CkBox_FrmPrincipal_ShowPassword.UseVisualStyleBackColor = true;
+            this.CkBox_FrmPrincipal_ShowPassword.CheckedChanged += new System.EventHandler(this.CkBox_ShowPassword_CheckedChanged);
             // 
             // Lbl_DontHave
             // 
@@ -232,10 +233,10 @@
         private System.Windows.Forms.Label Lbl_TxtWelcome;
         private System.Windows.Forms.Label Lbl_TxtUsername;
         private System.Windows.Forms.TextBox TxtBox_Username;
-        private System.Windows.Forms.TextBox TxtBox_Password;
+        private System.Windows.Forms.TextBox TxtBox_FrmPrincipal_Password;
         private System.Windows.Forms.Label Lbl_TxtPassword;
         private System.Windows.Forms.Button Btn_Login;
-        private System.Windows.Forms.CheckBox CkBox_ShowPassword;
+        private System.Windows.Forms.CheckBox CkBox_FrmPrincipal_ShowPassword;
         private System.Windows.Forms.Label Lbl_DontHave;
         private System.Windows.Forms.Label Lbl_Register;
         private System.Windows.Forms.Label Lbl_Titulo;

@@ -33,5 +33,17 @@ namespace LoginRegistrationForm
         {
             Application.Exit();
         }
+
+        private void CkBox_ShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CkBox_FrmPrincipal_ShowPassword.Checked)
+            {
+                TxtBox_FrmPrincipal_Password.PasswordChar = '\0';
+            }
+            else
+            {
+                TxtBox_FrmPrincipal_Password.PasswordChar = '*';
+            }
+        }
     }
 }
