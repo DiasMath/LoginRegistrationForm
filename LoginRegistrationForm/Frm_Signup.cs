@@ -40,6 +40,12 @@ namespace LoginRegistrationForm
 
         private void Btn_SignUp_Click(object sender, EventArgs e)
         {
+            if(TxtBox_FrmSignUp_Email.Text == "" || TxtBox_FrmSignUp_Username.Text == "" 
+                || TxtBox_FrmSignUp_Password.Text == "")
+            {
+                MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             if(connect.State != ConnectionState.Open)
             {
                 try
