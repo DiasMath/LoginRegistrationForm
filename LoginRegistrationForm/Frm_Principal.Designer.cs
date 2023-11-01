@@ -32,7 +32,7 @@
             this.Pn_Blue = new System.Windows.Forms.Panel();
             this.Lbl_TxtWelcome = new System.Windows.Forms.Label();
             this.Lbl_TxtUsername = new System.Windows.Forms.Label();
-            this.TxtBox_Username = new System.Windows.Forms.TextBox();
+            this.TxtBox_FrmPrincipal_Username = new System.Windows.Forms.TextBox();
             this.TxtBox_FrmPrincipal_Password = new System.Windows.Forms.TextBox();
             this.Lbl_TxtPassword = new System.Windows.Forms.Label();
             this.Btn_Login = new System.Windows.Forms.Button();
@@ -57,7 +57,7 @@
             this.Pn_White.Controls.Add(this.Btn_Login);
             this.Pn_White.Controls.Add(this.TxtBox_FrmPrincipal_Password);
             this.Pn_White.Controls.Add(this.Lbl_TxtPassword);
-            this.Pn_White.Controls.Add(this.TxtBox_Username);
+            this.Pn_White.Controls.Add(this.TxtBox_FrmPrincipal_Username);
             this.Pn_White.Controls.Add(this.Lbl_TxtUsername);
             this.Pn_White.Controls.Add(this.Lbl_TxtWelcome);
             this.Pn_White.Controls.Add(this.Pn_Blue);
@@ -96,14 +96,14 @@
             this.Lbl_TxtUsername.TabIndex = 2;
             this.Lbl_TxtUsername.Text = "Username";
             // 
-            // TxtBox_Username
+            // TxtBox_FrmPrincipal_Username
             // 
-            this.TxtBox_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_Username.Location = new System.Drawing.Point(293, 136);
-            this.TxtBox_Username.Multiline = true;
-            this.TxtBox_Username.Name = "TxtBox_Username";
-            this.TxtBox_Username.Size = new System.Drawing.Size(263, 24);
-            this.TxtBox_Username.TabIndex = 3;
+            this.TxtBox_FrmPrincipal_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBox_FrmPrincipal_Username.Location = new System.Drawing.Point(293, 136);
+            this.TxtBox_FrmPrincipal_Username.Multiline = true;
+            this.TxtBox_FrmPrincipal_Username.Name = "TxtBox_FrmPrincipal_Username";
+            this.TxtBox_FrmPrincipal_Username.Size = new System.Drawing.Size(263, 24);
+            this.TxtBox_FrmPrincipal_Username.TabIndex = 3;
             // 
             // TxtBox_FrmPrincipal_Password
             // 
@@ -138,6 +138,7 @@
             this.Btn_Login.TabIndex = 6;
             this.Btn_Login.Text = "Login";
             this.Btn_Login.UseVisualStyleBackColor = false;
+            this.Btn_Login.Click += new System.EventHandler(this.Btn_Login_Click);
             // 
             // CkBox_FrmPrincipal_ShowPassword
             // 
@@ -232,7 +233,7 @@
         private System.Windows.Forms.Panel Pn_Blue;
         private System.Windows.Forms.Label Lbl_TxtWelcome;
         private System.Windows.Forms.Label Lbl_TxtUsername;
-        private System.Windows.Forms.TextBox TxtBox_Username;
+        private System.Windows.Forms.TextBox TxtBox_FrmPrincipal_Username;
         private System.Windows.Forms.TextBox TxtBox_FrmPrincipal_Password;
         private System.Windows.Forms.Label Lbl_TxtPassword;
         private System.Windows.Forms.Button Btn_Login;

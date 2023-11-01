@@ -7,11 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace LoginRegistrationForm
 {
+   
+
     public partial class Frm_Principal : Form
     {
+
+        SqlConnection connect = new SqlConnection(@"Data Source=MDIAS\SQLEXPRESS;Initial Catalog=LOGINWINFORM;Integrated Security=True");
+
         public Frm_Principal()
         {
             InitializeComponent();
@@ -43,6 +50,34 @@ namespace LoginRegistrationForm
             else
             {
                 TxtBox_FrmPrincipal_Password.PasswordChar = '*';
+            }
+        }
+
+        private void Btn_Login_Click(object sender, EventArgs e)
+        {
+            if (TxtBox_FrmPrincipal_Username.Text == "" || TxtBox_FrmPrincipal_Password.Text == "")
+            {
+                MessageBox.Show("Please fill all blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if(connect.State != ConnectionState.Open)
+                {
+                    try
+                    {
+                        connect.Open();
+
+
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show("Error Connecting: ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        connect.Close();
+                    }
+                }
             }
         }
     }
