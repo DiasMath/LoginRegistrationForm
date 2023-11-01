@@ -88,7 +88,7 @@ namespace LoginRegistrationForm
                             }
                             else
                             {
-                                MessageBox.Show("Incorrect Usernme/Password", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Incorrect Username/Password", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
                         }
 

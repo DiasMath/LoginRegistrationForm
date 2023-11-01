@@ -52,45 +52,44 @@ namespace LoginRegistrationForm
                     try
                     {
                         connect.Open();
-                        String checkUsername = " SELECT * FROM cadastro WHERE USERNAME = '"
-                            + TxtBox_FrmSignUp_Email.Text.Trim() + "'";
 
-                        using (SqlCommand checkUser = new SqlCommand(checkUsername, connect))
-                        {
-                            SqlDataAdapter adapter = new SqlDataAdapter(checkUser);
-                            DataTable table = new DataTable();
-                            adapter.Fill(table);
+                            String checkEmail = "SELECT COUNT(*) FROM cadastro WHERE EMAIL = @email";
 
-                            if (table.Rows.Count >= 1)
+                            using (SqlCommand cmdCheckEmail = new SqlCommand(checkEmail, connect))
                             {
-                                MessageBox.Show(TxtBox_FrmSignUp_Email.Text + "is already exists", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
-                            else
-                            {
-                                string insertData = "INSERT INTO cadastro(EMAIL, USERNAME, PASSWORD, DATE_CREATED) " +
-                                    "VALUES(@email, @username, @pass, @date)";
+                                cmdCheckEmail.Parameters.AddWithValue("@email", TxtBox_FrmSignUp_Email.Text.Trim());
+                                int emailCount = (int)cmdCheckEmail.ExecuteScalar();
 
-
-                                DateTime date = DateTime.Today;
-
-                                using (SqlCommand cmd = new SqlCommand(insertData, connect))
+                                if (emailCount > 0)
                                 {
-                                    cmd.Parameters.AddWithValue("@email", TxtBox_FrmSignUp_Email.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@username", TxtBox_FrmSignUp_Username.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@pass", TxtBox_FrmSignUp_Password.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@date", date);
+                                    MessageBox.Show(TxtBox_FrmSignUp_Email.Text + " is already exists", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                                else
+                                {
+                                    string insertData = "INSERT INTO cadastro(EMAIL, USERNAME, PASSWORD, DATE_CREATED) " +
+                                        "VALUES(@email, @username, @pass, @date)";
 
 
-                                    cmd.ExecuteNonQuery();
+                                    DateTime date = DateTime.Today;
 
-                                    MessageBox.Show("Registered Successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    using (SqlCommand cmd = new SqlCommand(insertData, connect))
+                                    {
+                                        cmd.Parameters.AddWithValue("@email", TxtBox_FrmSignUp_Email.Text.Trim());
+                                        cmd.Parameters.AddWithValue("@username", TxtBox_FrmSignUp_Username.Text.Trim());
+                                        cmd.Parameters.AddWithValue("@pass", TxtBox_FrmSignUp_Password.Text.Trim());
+                                        cmd.Parameters.AddWithValue("@date", date);
 
-                                    Frm_Principal pForm = new Frm_Principal();
-                                    pForm.Show();
-                                    this.Hide();
+
+                                        cmd.ExecuteNonQuery();
+
+                                        MessageBox.Show("Registered Successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                        Frm_Principal pForm = new Frm_Principal();
+                                        pForm.Show();
+                                        this.Hide();
+                                    }
                                 }
                             }
-                        }
 
 
                         }
