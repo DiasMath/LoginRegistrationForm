@@ -31,11 +31,11 @@
             this.Lbl_Close = new System.Windows.Forms.Label();
             this.Lbl_FrmSignUp_Login = new System.Windows.Forms.Label();
             this.Lbl_DontHave = new System.Windows.Forms.Label();
-            this.CkBox_ShowPassword = new System.Windows.Forms.CheckBox();
+            this.CkBox_FrmSignUp_ShowPassword = new System.Windows.Forms.CheckBox();
             this.Btn_SignUp = new System.Windows.Forms.Button();
-            this.TxtBox_SignUp_Username = new System.Windows.Forms.TextBox();
+            this.TxtBox_FrmSignUp_Username = new System.Windows.Forms.TextBox();
             this.Lbl_TxtUseraname = new System.Windows.Forms.Label();
-            this.TxtBoxFrmSignUp_Username = new System.Windows.Forms.TextBox();
+            this.TxtBox_FrmSignUp_Email = new System.Windows.Forms.TextBox();
             this.Lbl_TxtEmailAdress = new System.Windows.Forms.Label();
             this.Lbl_TxtGetStarted = new System.Windows.Forms.Label();
             this.Pn_Blue = new System.Windows.Forms.Panel();
@@ -83,16 +83,17 @@
             this.Lbl_DontHave.TabIndex = 19;
             this.Lbl_DontHave.Text = "Already Have an Account?";
             // 
-            // CkBox_ShowPassword
+            // CkBox_FrmSignUp_ShowPassword
             // 
-            this.CkBox_ShowPassword.AutoSize = true;
-            this.CkBox_ShowPassword.ForeColor = System.Drawing.Color.Gray;
-            this.CkBox_ShowPassword.Location = new System.Drawing.Point(460, 246);
-            this.CkBox_ShowPassword.Name = "CkBox_ShowPassword";
-            this.CkBox_ShowPassword.Size = new System.Drawing.Size(102, 17);
-            this.CkBox_ShowPassword.TabIndex = 18;
-            this.CkBox_ShowPassword.Text = "Show Password";
-            this.CkBox_ShowPassword.UseVisualStyleBackColor = true;
+            this.CkBox_FrmSignUp_ShowPassword.AutoSize = true;
+            this.CkBox_FrmSignUp_ShowPassword.ForeColor = System.Drawing.Color.Gray;
+            this.CkBox_FrmSignUp_ShowPassword.Location = new System.Drawing.Point(460, 246);
+            this.CkBox_FrmSignUp_ShowPassword.Name = "CkBox_FrmSignUp_ShowPassword";
+            this.CkBox_FrmSignUp_ShowPassword.Size = new System.Drawing.Size(102, 17);
+            this.CkBox_FrmSignUp_ShowPassword.TabIndex = 18;
+            this.CkBox_FrmSignUp_ShowPassword.Text = "Show Password";
+            this.CkBox_FrmSignUp_ShowPassword.UseVisualStyleBackColor = true;
+            this.CkBox_FrmSignUp_ShowPassword.CheckedChanged += new System.EventHandler(this.CkBox_FrmSignUp_ShowPassword_CheckedChanged);
             // 
             // Btn_SignUp
             // 
@@ -109,14 +110,14 @@
             this.Btn_SignUp.UseVisualStyleBackColor = false;
             this.Btn_SignUp.Click += new System.EventHandler(this.Btn_SignUp_Click);
             // 
-            // TxtBox_SignUp_Username
+            // TxtBox_FrmSignUp_Username
             // 
-            this.TxtBox_SignUp_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBox_SignUp_Username.Location = new System.Drawing.Point(299, 160);
-            this.TxtBox_SignUp_Username.Multiline = true;
-            this.TxtBox_SignUp_Username.Name = "TxtBox_SignUp_Username";
-            this.TxtBox_SignUp_Username.Size = new System.Drawing.Size(263, 24);
-            this.TxtBox_SignUp_Username.TabIndex = 16;
+            this.TxtBox_FrmSignUp_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBox_FrmSignUp_Username.Location = new System.Drawing.Point(299, 160);
+            this.TxtBox_FrmSignUp_Username.Multiline = true;
+            this.TxtBox_FrmSignUp_Username.Name = "TxtBox_FrmSignUp_Username";
+            this.TxtBox_FrmSignUp_Username.Size = new System.Drawing.Size(263, 24);
+            this.TxtBox_FrmSignUp_Username.TabIndex = 16;
             // 
             // Lbl_TxtUseraname
             // 
@@ -129,14 +130,14 @@
             this.Lbl_TxtUseraname.Text = "Username";
             this.Lbl_TxtUseraname.Click += new System.EventHandler(this.Lbl_TxtUseraname_Click);
             // 
-            // TxtBoxFrmSignUp_Username
+            // TxtBox_FrmSignUp_Email
             // 
-            this.TxtBoxFrmSignUp_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxFrmSignUp_Username.Location = new System.Drawing.Point(299, 101);
-            this.TxtBoxFrmSignUp_Username.Multiline = true;
-            this.TxtBoxFrmSignUp_Username.Name = "TxtBoxFrmSignUp_Username";
-            this.TxtBoxFrmSignUp_Username.Size = new System.Drawing.Size(263, 24);
-            this.TxtBoxFrmSignUp_Username.TabIndex = 14;
+            this.TxtBox_FrmSignUp_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBox_FrmSignUp_Email.Location = new System.Drawing.Point(299, 101);
+            this.TxtBox_FrmSignUp_Email.Multiline = true;
+            this.TxtBox_FrmSignUp_Email.Name = "TxtBox_FrmSignUp_Email";
+            this.TxtBox_FrmSignUp_Email.Size = new System.Drawing.Size(263, 24);
+            this.TxtBox_FrmSignUp_Email.TabIndex = 14;
             // 
             // Lbl_TxtEmailAdress
             // 
@@ -219,11 +220,11 @@
             this.Controls.Add(this.Lbl_Close);
             this.Controls.Add(this.Lbl_FrmSignUp_Login);
             this.Controls.Add(this.Lbl_DontHave);
-            this.Controls.Add(this.CkBox_ShowPassword);
+            this.Controls.Add(this.CkBox_FrmSignUp_ShowPassword);
             this.Controls.Add(this.Btn_SignUp);
-            this.Controls.Add(this.TxtBox_SignUp_Username);
+            this.Controls.Add(this.TxtBox_FrmSignUp_Username);
             this.Controls.Add(this.Lbl_TxtUseraname);
-            this.Controls.Add(this.TxtBoxFrmSignUp_Username);
+            this.Controls.Add(this.TxtBox_FrmSignUp_Email);
             this.Controls.Add(this.Lbl_TxtEmailAdress);
             this.Controls.Add(this.Lbl_TxtGetStarted);
             this.Controls.Add(this.Pn_Blue);
@@ -243,11 +244,11 @@
         private System.Windows.Forms.Label Lbl_Close;
         private System.Windows.Forms.Label Lbl_FrmSignUp_Login;
         private System.Windows.Forms.Label Lbl_DontHave;
-        private System.Windows.Forms.CheckBox CkBox_ShowPassword;
+        private System.Windows.Forms.CheckBox CkBox_FrmSignUp_ShowPassword;
         private System.Windows.Forms.Button Btn_SignUp;
-        private System.Windows.Forms.TextBox TxtBox_SignUp_Username;
+        private System.Windows.Forms.TextBox TxtBox_FrmSignUp_Username;
         private System.Windows.Forms.Label Lbl_TxtUseraname;
-        private System.Windows.Forms.TextBox TxtBoxFrmSignUp_Username;
+        private System.Windows.Forms.TextBox TxtBox_FrmSignUp_Email;
         private System.Windows.Forms.Label Lbl_TxtEmailAdress;
         private System.Windows.Forms.Label Lbl_TxtGetStarted;
         private System.Windows.Forms.Panel Pn_Blue;
