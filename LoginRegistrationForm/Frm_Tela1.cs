@@ -16,5 +16,10 @@ namespace LoginRegistrationForm
         {
             InitializeComponent();
         }
+
+        private void Lbl_FrmTela1_Close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
