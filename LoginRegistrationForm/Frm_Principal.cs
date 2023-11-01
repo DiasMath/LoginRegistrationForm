@@ -67,8 +67,7 @@ namespace LoginRegistrationForm
                     {
                         connect.Open();
 
-                        String selectData = "SELECT * FROM cadastro WHRERE USERNAME = @username " +
-                            "AND PASSWORD = @pass ";
+                        String selectData = "SELECT * FROM cadastro WHERE USERNAME = @username AND PASSWORD = @pass";
 
                         using (SqlCommand cmd = new SqlCommand(selectData, connect))
                         {
@@ -96,7 +95,7 @@ namespace LoginRegistrationForm
                     }
                     catch(Exception ex)
                     {
-                        MessageBox.Show("Error Connecting: ", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error Connecting: " + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     finally
                     {

@@ -9,3 +9,4 @@ C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\L
 C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\LoginRegistrationForm.exe
 C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\LoginRegistrationForm.pdb
 C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\LoginRegistrationForm.Frm_Signup.resources
+C:\WindowsForms\YT_Login\LoginRegistrationForm\LoginRegistrationForm\obj\Debug\LoginRegistrationForm.Frm_TelaLogado.resources
