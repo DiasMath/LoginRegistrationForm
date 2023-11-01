@@ -82,6 +82,10 @@ namespace LoginRegistrationForm
                             if(table.Rows.Count >= 1)
                             {
                                 MessageBox.Show("Logged In Successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                Frm_TelaLogado tlForm = new Frm_TelaLogado();
+                                tlForm.Show();
+                                this.Hide();
                             }
                             else
                             {
