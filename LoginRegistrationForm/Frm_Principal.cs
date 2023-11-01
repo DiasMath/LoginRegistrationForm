@@ -67,6 +67,27 @@ namespace LoginRegistrationForm
                     {
                         connect.Open();
 
+                        String selectData = "SELECT * FROM cadastro WHRERE USERNAME = @username " +
+                            "AND PASSWORD = @pass ";
+
+                        using (SqlCommand cmd = new SqlCommand(selectData, connect))
+                        {
+                            cmd.Parameters.AddWithValue("@username", TxtBox_FrmPrincipal_Username.Text);
+                            cmd.Parameters.AddWithValue("@pass", TxtBox_FrmPrincipal_Password.Text);
+
+                            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                            DataTable table = new DataTable();
+                            adapter.Fill(table);
+
+                            if(table.Rows.Count >= 1)
+                            {
+                                MessageBox.Show("Logged In Successfully", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Incorrect Usernme/Password", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
 
                     }
                     catch(Exception ex)
